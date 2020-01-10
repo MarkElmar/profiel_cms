@@ -1,2 +1,2 @@
 <?php
-echo "GET REKT BITCH"
+echo "GET REKT BITCH";
