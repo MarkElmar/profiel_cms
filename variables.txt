@@ -1,0 +1,4 @@
+Inlog NAMES:
+naam = #name
+password = #password
+submit = #login
