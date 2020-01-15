@@ -1,0 +1,15 @@
+.bg-nav{
+    background-color: #A5A6A8;
+}
+
+#headerimg{
+    background-color: green;
+    height: 400px;
+    width: 100%
+}
+
+#headerimgtier2{
+    background-color: blue;
+    height: 200px;
+    width: 100%;
+}
