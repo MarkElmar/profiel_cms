@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>De taartenkoning | Samenstellen</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-2 offset-lg-2 content img-fluid"></div>
+    </div>
+    <div class="row">
+      <form class="col-12">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputTaste">Kies template</label>
+            <select id="inputTaste" class="form-control">
+              <option selected>Template</option>
+              <option class="option-1" value="00">Alleen tekst</option>
+              <option class="option-2" value="01">Blok met tekst</option>
+              <option class="option-3" value="02">Blok rechts tekst links</option>
+              <option class="option-4" value="03">Blok links tekst rechts</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Bestel uw taart</button>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="js/sb-admin.min.js"></script> 
+<script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+var prevVal;
+$("#inputTaste").on("change",function(){
+  var val = $(this).find('option:selected').val();
+  $(".content").removeClass(`content-${prevVal}`).addClass(`content-${val}`);
+  prevVal = val;
+});	
+</script>
+</body>
+</html>

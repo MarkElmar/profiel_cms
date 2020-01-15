@@ -5,3 +5,9 @@ $(document).ready(function(){
     $("#geen-content-message").addClass("d-none");
   });
 });
+var prevVal;
+$("#inputTaste").on("change",function(){
+  var val = $(this).find('option:selected').val();
+  $(".content").removeClass(`content-${prevVal}`).addClass(`content-${val}`);
+  prevVal = val;
+});	
