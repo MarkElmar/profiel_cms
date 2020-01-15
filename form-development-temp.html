@@ -12,15 +12,18 @@
 <body>
 <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-2 offset-lg-2 content img-fluid"></div>
-    </div>
+		<div class="col-12 col-lg-6 offset-lg-3 d-none" id="alleen-tekst">test1</div>
+		<div class="col-12 col-lg-6 offset-lg-3 d-none" id="blok-tekst">test2</div>
+		<div class="col-12 col-lg-6 offset-lg-3 d-none" id="links-tekst">test3</div>
+		<div class="col-12 col-lg-6 offset-lg-3 d-none" id="rechts-tekst">test4</div>
+	</div>
     <div class="row">
       <form class="col-12">
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputTaste">Kies template</label>
             <select id="inputTaste" class="form-control">
-              <option selected>Template</option>
+              <option selected value="99">Template</option>
               <option class="option-1" value="00">Alleen tekst</option>
               <option class="option-2" value="01">Blok met tekst</option>
               <option class="option-3" value="02">Blok rechts tekst links</option>
@@ -40,9 +43,38 @@
 <script type="text/javascript">
 var prevVal;
 $("#inputTaste").on("change",function(){
-  var val = $(this).find('option:selected').val();
-  $(".content").removeClass(`content-${prevVal}`).addClass(`content-${val}`);
-  prevVal = val;
+	var val = $(this).find('option:selected').val();
+	if(val == 00)
+	{
+		$("#alleen-tekst").removeClass("d-none");
+		$("#blok-tekst").addClass("d-none");
+		$("#links-tekst").addClass("d-none");
+		$("#rechts-tekst").addClass("d-none");
+	} else if(val == 01)
+	{
+		$("#alleen-tekst").addClass("d-none");
+		$("#blok-tekst").removeClass("d-none");
+		$("#links-tekst").addClass("d-none");
+		$("#rechts-tekst").addClass("d-none");
+	} else if(val == 02)
+	{
+		$("#alleen-tekst").addClass("d-none");
+		$("#blok-tekst").addClass("d-none");
+		$("#links-tekst").removeClass("d-none");
+		$("#rechts-tekst").addClass("d-none");
+	}else if(val == 03)
+	{
+		$("#alleen-tekst").addClass("d-none");
+		$("#blok-tekst").addClass("d-none");
+		$("#links-tekst").addClass("d-none");
+		$("#rechts-tekst").removeClass("d-none");
+	}else if(val == 99)
+	{
+		$("#alleen-tekst").addClass("d-none");
+		$("#blok-tekst").addClass("d-none");
+		$("#links-tekst").addClass("d-none");
+		$("#rechts-tekst").addClass("d-none");
+	}
 });	
 </script>
 </body>

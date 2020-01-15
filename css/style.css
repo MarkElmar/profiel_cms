@@ -228,7 +228,7 @@ fieldset[disabled] .btn-cyan.active {
   background-color: #FFFFFF; 
 }
 
-.content-00{background-color: blue; height: 50px; width: 50px}
-.content-01{background-color: red; height: 50px; width: 50px}
-.content-02{background-color: green; height: 50px; width: 50px}
-.content-03{background-color: pink; height: 50px; width: 50px}
+.content-00{background-image: url("../images/text-only.jpg"); background-size: cover; background-repeat: no-repeat; width: 900px; height: 500px;}
+.content-01{background-image: url("../images/text-boxed.jpg"); background-size: cover; background-repeat: no-repeat; width: 900px; height: 500px;}
+.content-02{background-image: url("../images/text-left.jpg"); background-size: cover; background-repeat: no-repeat; width: 900px; height: 500px;}
+.content-03{background-image: url("../images/text-right.jpg"); background-size: cover; background-repeat: no-repeat; width: 900px; height: 500px;}

@@ -54,7 +54,28 @@
 					<p id="geen-content-message">Er is nog geen content toegevoegd</p>
 					<a class="btn btn-outline-primary" id="showSection">Voeg section toe</a>
 					<div id="sectionBox" class="d-none">
-						
+						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="alleen-tekst"><img src="images/text-only.jpg" class="img-fluid" alt="portfolio - Option text only"></div>
+						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="blok-tekst"><img src="images/text-boxed.jpg" class="img-fluid" alt="portfolio - Option text boxed"></div>
+						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="links-tekst"><img src="images/text-left.jpg" class="img-fluid" alt="portfolio - Option text left"></div>
+						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="rechts-tekst"><img src="images/text-right.jpg" class="img-fluid" alt="portfolio - Option text-right"></div>
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="inputTemplate">Kies template</label>
+									<select id="inputTemplate" class="form-control">
+										<option selected value="99">Template</option>
+										<option class="option-1" value="00">Alleen tekst</option>
+										<option class="option-2" value="01">Blok met tekst</option>
+										<option class="option-3" value="02">Blok rechts tekst links</option>
+										<option class="option-4" value="03">Blok links tekst rechts</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Example textarea</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
