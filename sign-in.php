@@ -25,10 +25,15 @@ if (isset($_SERVER['HTTP_REFERER']) AND $_SERVER['HTTP_REFERER'] === 'https://pr
 
                 } else {
                     header("Location: login.php?wrongPassword");
+                    exit;
                 }
             } else {
                 header("Location: login.php?wrongUser");
+                exit;
             }
+        } else {
+            header("Loction: login.php?empty");
+            exit;
         }
 
 
