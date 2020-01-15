@@ -137,3 +137,93 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1200px) {
 	
 }
+.btn-green { 
+  color: #FFFFFF; 
+  background-color: #01B27C; 
+  border-color: #01B27C; 
+} 
+ 
+.btn-green:hover, 
+.btn-green:focus, 
+.btn-green:active, 
+.btn-green.active, 
+.open .dropdown-toggle.btn-green { 
+  color: #FFFFFF; 
+  background-color: #00A674; 
+  border-color: #01B27C; 
+} 
+ 
+.btn-green:active, 
+.btn-green.active, 
+.open .dropdown-toggle.btn-green { 
+  background-image: none; 
+} 
+ 
+.btn-green.disabled, 
+.btn-green[disabled], 
+fieldset[disabled] .btn-green, 
+.btn-green.disabled:hover, 
+.btn-green[disabled]:hover, 
+fieldset[disabled] .btn-green:hover, 
+.btn-green.disabled:focus, 
+.btn-green[disabled]:focus, 
+fieldset[disabled] .btn-green:focus, 
+.btn-green.disabled:active, 
+.btn-green[disabled]:active, 
+fieldset[disabled] .btn-green:active, 
+.btn-green.disabled.active, 
+.btn-green[disabled].active, 
+fieldset[disabled] .btn-green.active { 
+  background-color: #01B27C; 
+  border-color: #01B27C; 
+} 
+ 
+.btn-green .badge { 
+  color: #01B27C; 
+  background-color: #FFFFFF; 
+}
+.btn-cyan { 
+  color: #FFFFFF!important; 
+  background-color: #14A3AB; 
+  border-color: #14A3AB; 
+} 
+ 
+.btn-cyan:hover, 
+.btn-cyan:focus, 
+.btn-cyan:active, 
+.btn-cyan.active, 
+.open .dropdown-toggle.btn-cyan { 
+  color: #FFFFFF; 
+  background-color: #13898F; 
+  border-color: #14A3AB; 
+} 
+ 
+.btn-cyan:active, 
+.btn-cyan.active, 
+.open .dropdown-toggle.btn-cyan { 
+  background-image: none; 
+} 
+ 
+.btn-cyan.disabled, 
+.btn-cyan[disabled], 
+fieldset[disabled] .btn-cyan, 
+.btn-cyan.disabled:hover, 
+.btn-cyan[disabled]:hover, 
+fieldset[disabled] .btn-cyan:hover, 
+.btn-cyan.disabled:focus, 
+.btn-cyan[disabled]:focus, 
+fieldset[disabled] .btn-cyan:focus, 
+.btn-cyan.disabled:active, 
+.btn-cyan[disabled]:active, 
+fieldset[disabled] .btn-cyan:active, 
+.btn-cyan.disabled.active, 
+.btn-cyan[disabled].active, 
+fieldset[disabled] .btn-cyan.active { 
+  background-color: #14A3AB; 
+  border-color: #14A3AB; 
+} 
+ 
+.btn-cyan .badge { 
+  color: #14A3AB; 
+  background-color: #FFFFFF; 
+}
