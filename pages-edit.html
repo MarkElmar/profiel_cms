@@ -54,11 +54,11 @@
 					<p id="geen-content-message">Er is nog geen content toegevoegd</p>
 					<a class="btn btn-outline-primary" id="showSection">Voeg section toe</a>
 					<div id="sectionBox" class="d-none">
-						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="alleen-tekst"><img src="images/text-only.jpg" class="img-fluid" alt="portfolio - Option text only"></div>
-						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="blok-tekst"><img src="images/text-boxed.jpg" class="img-fluid" alt="portfolio - Option text boxed"></div>
-						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="links-tekst"><img src="images/text-left.jpg" class="img-fluid" alt="portfolio - Option text left"></div>
-						<div class="col-12 col-lg-6 offset-lg-3 d-none" id="rechts-tekst"><img src="images/text-right.jpg" class="img-fluid" alt="portfolio - Option text-right"></div>
-						<form>
+						<div class="col-12 col-lg-4 offset-lg-4 d-none" id="alleen-tekst"><img src="images/text-only.jpg" class="img-fluid" alt="portfolio - Option text only"></div>
+						<div class="col-12 col-lg-4 offset-lg-4 d-none" id="blok-tekst"><img src="images/text-boxed.jpg" class="img-fluid" alt="portfolio - Option text boxed"></div>
+						<div class="col-12 col-lg-4 offset-lg-4 d-none" id="links-tekst"><img src="images/text-left.jpg" class="img-fluid" alt="portfolio - Option text left"></div>
+						<div class="col-12 col-lg-4 offset-lg-4 d-none" id="rechts-tekst"><img src="images/text-right.jpg" class="img-fluid" alt="portfolio - Option text-right"></div>
+						<form method="post" action="content_verwerk.php">
 							<div class="form-row">
 								<div class="form-group col-md-4">
 									<label for="inputTemplate">Kies template</label>
@@ -72,8 +72,15 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="exampleFormControlTextarea1">Example textarea</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								<label for="headtext">Titel</label>
+								<input type="text" class="form-control" placeholder="titel" id="headtext">
+							</div>
+							<div class="form-group">
+								<label for="contenttext">Content</label>
+								<textarea class="form-control" id="contenttext" rows="3" placeholder="Deze tekst wil ik graag plaatsen"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" name="submit" class="btn btn-primary">
 							</div>
 						</form>
 					</div>
