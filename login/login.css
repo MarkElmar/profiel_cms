@@ -7,12 +7,28 @@
 body {
     background: url("img/bg.png") no-repeat;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #login {
-    height: 80vh;
-    width: 60%;
+    height: 75vh;
+    width: 60vw;
     background-color: white;
-    margin: 10vh 0vh 0vh 20%;
+    margin: 12.5vh 0vh 0vh 20%;
     border-radius: 15px;
+}
+
+/*#login-frame {*/
+/*    height: 65vh;*/
+/*    width: 20vw;*/
+/*    margin: 10vh 0% 0% 5%;*/
+/*    background-color: rebeccapurple;*/
+/*    border-radius: 15px;*/
+
+/*}*/
+#sign-in {
+    width: 60%;
+    height: 100%;
+    margin-left: 37.5%;
+    background-color: darksalmon;
 }
