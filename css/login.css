@@ -2,33 +2,102 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: url("../img/bg.png") no-repeat;
-    background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
 
-#login {
-    height: 75vh;
-    width: 60vw;
-    background-color: white;
-    margin: 12.5vh 0vh 0vh 20%;
+body {
+    height: 100%;
+    background: url("../img/bg.png") center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vh-75 {
+    margin-top: 15vh;
+    height: 72.5vh;
     border-radius: 15px;
 }
 
-/*#login-frame {*/
-/*    height: 65vh;*/
-/*    width: 20vw;*/
-/*    margin: 10vh 0% 0% 5%;*/
-/*    background-color: rebeccapurple;*/
-/*    border-radius: 15px;*/
+    /*All below code is used for the loginform and styling*/
 
-/*}*/
-#sign-in {
-    width: 60%;
+
+/*Form Left Image*/
+
+#login-frame {
     height: 100%;
-    margin-left: 37.5%;
-    background-color: darksalmon;
+    border-radius: 15px;
+    background: center center;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
+
+    #login-frame p {
+        color: #613A3A;
+        font-weight: bold;
+        position: absolute;
+        left: 2rem;
+        bottom: 0;
+    }
+
+    /*The form itself*/
+
+#sign-in {
+    height: 100%;
+    text-align: center;
+}
+
+    #sign-in h2 {
+        color: black;
+        font-weight: normal;
+        font-size: 64px;
+        min-font-size: 30px;
+        line-height: 78px;
+        letter-spacing: 0.045em;
+    }
+
+.username {
+    margin-top: 5vh;
+}
+
+    .username input{
+        border: none;
+        border-bottom: 2.5px black solid;
+        cursor: text;
+        /*width: 120px;*/
+    }
+
+    input:focus{
+        width: 260px;
+        transition: all .35s;
+    }
+
+    .username-text {
+        transform: translateY(1.8rem);
+    }
+
+    /*.username-text {*/
+    /*    !* transform: translate(25vw, -1.8rem); *!*/
+    /*    color: black;     !* #9B9B9B *!*/
+    /*    cursor: text;*/
+    /*    font-style: normal;*/
+    /*    font-weight: 500;*/
+    /*    font-size: 24px;*/
+    /*    text-transform: uppercase;*/
+    /*    line-height: 29px;*/
+    /*    letter-spacing: 0.045em;*/
+    /*    width: 120px;*/
+    /*    z-index: -1;*/
+    /*}*/
+
+    /*Login animation*/
+
+/*input:focus {*/
+/*    !*transform: translate(20rem, -1.8rem);*!*/
+/*    border-bottom: 2.5px solid black;*/
+/*    width: 25vw;*/
+/*    transition: 1.2s;*/
+/*}*/
+
