@@ -4,7 +4,6 @@ require 'includes/config.inc.php';
 
 $query = "SELECT * FROM contentposts WHERE pagename = 'over'";
 
-
 ?>
 <?php require 'includes/header.php'; ?>
 	<div id="content-wrapper">

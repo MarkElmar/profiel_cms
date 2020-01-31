@@ -1,3 +1,14 @@
+<?php
+//voeg het bestand config.php toe;
+require 'includes/config.inc.php';
+
+$query = "SELECT * FROM profiel";
+
+$result = $conn->query($query);	
+$rij = $result->fetch_assoc();
+
+$naam = $rij['naam'];
+?>
 <!doctype html>
 <html>
 <head>
@@ -23,12 +34,12 @@
 					<a href="dashboard-profile.html"><img src="images/profile-picture.png" class="img-fluid" alt="Portfolio profile picture"></a>
 				</div>
 				<div class="col-12 col-lg-7 welcomemsg h-100 my-auto">
-					<p><span class="welcomegreen">Welcome,</span><br>Lorem Ipsum</p>					
+					<p><span class="welcomegreen">Welcome,</span><br><?= $naam;?></p>					
 				</div>
 			</div>
 		</div>
 		<li class="nav-item"> 
-			<a class="nav-link" href="charts.php"> <i class="fas fa-address-card"></i> <span>Profiel</span></a> 
+			<a class="nav-link" href="profiel.php"> <i class="fas fa-address-card"></i> <span>Profiel</span></a> 
 		</li>
 		<li class="nav-item"> 
 			<a class="nav-link" href="pages.php"> <i class="fas fa-file-alt"></i> <span>Pagina's</span></a> 
