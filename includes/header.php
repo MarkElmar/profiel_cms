@@ -50,7 +50,9 @@ $naam = $rij['naam'];
 		<li class="nav-item"> 
 			<a class="nav-link" href="charts.php"> <i class="fas fa-clipboard-list"></i> <span>Formulier</span></a> 
 		</li>
+<!--
 		<li class="nav-item"> 
 			<a class="nav-link" href="charts.php"> <i class="fas fa-cogs"></i> <span>Instellingen</span></a> 
 		</li>
+-->
 	</ul>
