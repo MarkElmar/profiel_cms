@@ -68,10 +68,9 @@ $query = "SELECT * FROM contentposts WHERE pagename = 'over'";
 						while ( $rij = mysqli_fetch_array( $resultaat ) ) {
 							echo '<div class="border margin-bot-2 padding-top-1 padding-bot-1">';
 							echo '<p>test</p>';
-							echo '<a class="btn btn-outline-primary" id="showSection">Voeg nieuwe section toe</a>';
-
 							echo '</div>';
 						}
+						echo '<a class="btn btn-outline-primary" id="showSection">Voeg nieuwe section toe</a>';
 					}
 					?>
 					
